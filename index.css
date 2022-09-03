@@ -44,35 +44,55 @@
 /* HERO */
 .hero {
     color: white;
-    width: 80%;
+    width: 100%;
     height: 60vh;
     padding: 15px 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
+}
+
+.hero h3{
+    font-size: 0.7rem;
+    font-weight: 100;
+
 }
 
 .hero-part2{
     width: 50%;
 }
 
-.hero-part2>img+img{
-    width: 60%;
-    margin-left: -21%;
-    margin-top: -15%;
+.hero-img1{
+    height: 270px;
+    padding-left: 85px;
+}
+
+.hero-img2{
+height: 300px;
+position: absolute;
+}
+
+.hero-part2>.hero-img1+.hero-img2{
+    width: 30%;
+    margin-left: -10%;
+    margin-top: -3%;
 }
 
 .hero-part1 {
+width: 50%;
 font-family: 'Montserrat', sans-serif;
 font-weight: 700;
-font-size: 1.7rem;
+font-size: 1.3rem;
 padding: 30px 40px;
-gap: 60px;
+gap: 30px;
+letter-spacing: 1px;
 }
 
 .titulo {
     margin-bottom: 20px;
+
 }
 
 #buscador {
@@ -90,11 +110,12 @@ gap: 60px;
 border-radius: 15px;
 background: rgb(255,161,0);
 background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
-padding: 10px 50px;
+padding: 10px 30px;
 color: white;
 font-weight: 700;
 text-align: center;
 border: none;
+margin-top:10px;
 }
 
 /* RECOMENDACIONES */
@@ -163,10 +184,11 @@ font-size: 1em;
     font-size: 1.2em;
 }
 
+
 /* CATEGORIAS */
 
 .categorias {
-    height: 70vh;
+    height: 40vh;
     width: 100%;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -208,8 +230,101 @@ font-size: 1.2em;
 }
 
 /*LOS MAS PAPULARES */
+.los-mas-populares{
+height: 90vh;
+width: 100%;
+color: white;
+font-family: 'Montserrat', sans-serif;
+}
+
+.los-mas-populares h2{
+font-weight: 700;
+font-size: 1.3em;
+padding: 10px 40px;
+margin-bottom: 10px;
+}
+
+.cards-section-populares {
+padding-top: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+.card-populares{
+border: 5px solid #2B2B2C;
+background-color: #2B2B2C;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+gap: 3px;
+font-size: 0.7em;
+padding: 10px;
+}
+
+.info-card-p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-card-p {
+    width: 40%;
+    border-radius: 15px;
+    background: rgb(255,161,0);
+    background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+/*FINAL*/
+
+.final {
+gap: 20px;
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: center;
+height: 10vh;
+width: 100%;
+color: white;
+font-family: 'Montserrat', sans-serif;
+text-decoration: none;
+font-size: 0.8rem;
+font-style: none;
+}
 
 
+.final a{
+text-decoration: none;
+color: white;
+}
+
+
+/*FOOTER*/
+
+.footer h3 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+    padding: 20px;
+    }
+
+    .footer span{
+    font-weight: 700;
+    }
 
 /*RESPONSIVE de 993 a 1400px MEDIDAS L-XL-XXL*/
 @media (min-width:993px) and (max-width:1400px){
