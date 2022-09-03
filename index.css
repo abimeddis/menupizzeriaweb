@@ -44,7 +44,7 @@
 /* HERO */
 .hero {
     color: white;
-    width: 100%;
+    max-width: 1440px;
     height: 60vh;
     padding: 15px 40px;
     display: flex;
@@ -121,7 +121,7 @@ margin-top:10px;
 /* RECOMENDACIONES */
 .recomendaciones {
     height: 40vh;
-    width: 100%;
+    max-width: 1280px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     padding: 30px 40px;
@@ -189,7 +189,7 @@ font-size: 1em;
 
 .categorias {
     height: 40vh;
-    width: 100%;
+    max-width: 1280px;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -229,28 +229,28 @@ font-weight: 700;
 font-size: 1.2em;
 }
 
-/*LOS MAS PAPULARES */
+/*LOS MAS POPULARES */
 .los-mas-populares{
 height: 90vh;
-width: 100%;
+max-width: 1280px;
 color: white;
 font-family: 'Montserrat', sans-serif;
+padding: 10px 40px;
 }
 
 .los-mas-populares h2{
 font-weight: 700;
-font-size: 1.3em;
-padding: 10px 40px;
-margin-bottom: 10px;
+font-size: 1rem;
+padding: 0px 40px;
 }
 
 .cards-section-populares {
-padding-top: 10px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
+gap: 10px;
 }
 
 .card-populares{
@@ -259,16 +259,15 @@ background-color: #2B2B2C;
 border-radius: 10px;
 display: flex;
 flex-direction: column;
-justify-content: space-around;
-gap: 3px;
+justify-content: space-between;
+gap: 5px;
 font-size: 0.7em;
-padding: 10px;
 }
 
 .info-card-p{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 }
 
 .button-card-p {
@@ -326,40 +325,56 @@ color: white;
     font-weight: 700;
     }
 
-/*RESPONSIVE de 993 a 1400px MEDIDAS L-XL-XXL*/
-@media (min-width:993px) and (max-width:1400px){
+/*RESPONSIVE de 993 a 1400px MEDIDAS XL
+@media (min-width:1065px) and (max-width:1400px){
+
+
+}*/
+
+/*RESPONSIVE de 993 a 1400px MEDIDAS L-XL*/
+@media (min-width:993px) and (max-width:1110px){
 /*header*/
 .hero-part2{
-    width: 70%;
+    width: 100%;
 
 }
 .hero{
     justify-content: space-evenly;
     width: 100%;
 }
+.hero-part2>.hero-img1+.hero-img2{
+    margin-left: -13%;
+    margin-top: -3%;
+        }  
+
+.cards-section-populares{
+width: 100%;
+justify-content: center;
+
+}
+.los-mas-populares{
+    height: 120vh;
+}
 }
 
-/*RESPONSIVE de 769 a 992px MEDIDAS M*/
-@media (min-width:577px) and (max-width:992px) {
-    .hero-part2{
-        width: 80%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap:0;
+/*RESPONSIVE de 841 a 992px MEDIDAS M*/
+@media (min-width:841px) and (max-width:992px) {
+
+.hero-img1{
+height: 230px;
+padding-left: 45px;
     }
-    .hero-img2{
-       height: 100%;
+.hero-part2>.hero-img1+.hero-img2{
+margin-left: -15%;
+margin-top: -3%;
+    }  
+.los-mas-populares{
+ height: 130vh;
     }
-    .hero-img1{
-        height: 100%;
-    }
-        
     }
 
 /*RESPONSIVE de 577 a 768pc MEDIDA S */
-@media (min-width:577px) and  (max-width:768px){
+@media (min-width:577px) and  (max-width:840px){
     #buscador{
         width: 50vw;
     }
@@ -373,16 +388,29 @@ color: white;
     width: 100%;
     font-size: 1.5rem;
 }
+.recomendaciones{
+    height: 60vh;
+}
+.categorias{
+    height: 90vh;
+}
+
 .categorias-cards {
     flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
 }
+
 .cards {
     flex-wrap: wrap;
+}
+.los-mas-populares{
+    height: 160vh;
 }
 }
 
 /*RESPONSIVE XS */
-@media (max-width: 576px){
+@media (max-width: 584px){
     #buscador{
         width: 100vw;
     }
@@ -412,9 +440,13 @@ color: white;
     }
     .categorias-cards {
         flex-wrap: wrap;
-        padding: 5px;
+        padding: 20px;
     }
     .cards {
         flex-wrap: wrap;
+    
+    }
+    .los-mas-populares{
+        height: 300vh;
     }
 }
