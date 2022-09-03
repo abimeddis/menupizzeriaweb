@@ -118,6 +118,11 @@ border: none;
 margin-top:10px;
 }
 
+.button:hover{
+padding: 10px;
+font-size: 1.2rem;
+}
+
 /* RECOMENDACIONES */
 .recomendaciones {
     height: 40vh;
@@ -151,8 +156,13 @@ gap: 25px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     gap: 10px;
+}
+
+.card-recomendaciones:hover{
+    font-size: 1rem;
+    padding: 3px;
 }
 
 .info-card{
@@ -264,6 +274,11 @@ gap: 5px;
 font-size: 0.7em;
 }
 
+.card-populares:hover{
+    font-size: 1rem;
+    padding: 10px;
+}
+
 .info-card-p{
 display: flex;
 flex-direction: row;
@@ -302,6 +317,10 @@ font-style: none;
 .final a{
 text-decoration: none;
 color: white;
+}
+
+.final a:hover{
+    font-size: 1rem;
 }
 
 
